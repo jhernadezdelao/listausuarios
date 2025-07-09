@@ -1,0 +1,131 @@
+
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 80px);
+    background-color: #f0f2f5;
+    padding: 20px;
+  }
+  
+  /* La tarjeta que contiene el formulario */
+  .login-container {
+    background: #ffffff;
+    padding: 2rem 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  /* Encabezado del formulario */
+  .login-header h2 {
+    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+    color: #333;
+  }
+  
+  .login-header p {
+    margin-bottom: 2rem;
+    color: #666;
+  }
+  
+  /* Agrupación de label e input */
+  .input-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #555;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  /* Efecto visual al hacer foco en el input */
+  .input-group input:focus {
+    outline: none;
+    border-color: #61dafb;
+    box-shadow: 0 0 0 3px rgba(97, 218, 251, 0.3);
+  }
+  
+  /* Mensaje de error de validación de Formik */
+  .validation-error {
+    color: #e53e3e;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+  }
+  
+  /* Botón de envío */
+  .submit-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px; /* Altura fija para evitar saltos al mostrar el spinner */
+  }
+  
+  .submit-button:hover {
+    background-color: #555;
+  }
+  
+  .submit-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Mensaje de error de la API (credenciales incorrectas) */
+  .form-error {
+    background-color: #fed7d7;
+    color: #c53030;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 1.5rem;
+    font-weight: 500;
+  }
+  
+  /* Pie de página de la tarjeta con credenciales de prueba */
+  .login-footer {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    color: #777;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px dashed #ddd;
+  }
+  
+  /* Animación de spinner para el estado de carga */
+  .spinner {
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top: 4px solid #ffffff;
+    width: 24px;
+    height: 24px;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
