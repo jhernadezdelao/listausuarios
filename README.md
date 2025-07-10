@@ -152,7 +152,7 @@ Este proyecto utiliza el API público [JSONPlaceholder](https://jsonplaceholder.
 
 ## 📄 URL demo
 
-https://luxury-granita-ae3565.netlify.app/login
+https://luxury-granita-ae3565.netlify.app
 
 ## 📄 Licencia
 
